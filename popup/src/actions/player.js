@@ -4,6 +4,7 @@ import { PLAYER as actionTypes, AUTH as authActionTypes } from '../constants/act
 import { MENUBAR_ITEMS } from '../constants/menubar'
 import { switchMenu } from './menubar'
 import { checkTrackIsFavorited } from './track'
+import { CommunicationHelper } from '../../../content-script/src/utils/communication';
 
 const DELAY_TIME = 800
 
@@ -150,6 +151,7 @@ export const onSkipPrevious = () => (dispatch) => {
 }
 
 export const play = item => dispatch => {
+  CommunicationHelper.getComunicationHelper().sendPlayAction(item);
   const uri = item.uri
   
   if (!uri) {

@@ -38,6 +38,7 @@ class ContentContainer extends Component {
       // case MENUBAR_ITEMS.LIBRARY:
       //   content = <div></div> // Menu component
       //   break
+      case MENUBAR_ITEMS.NETWORK:
       default:
         content = <div></div> // Menu component
     }

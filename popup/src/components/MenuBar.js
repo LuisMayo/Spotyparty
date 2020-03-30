@@ -9,6 +9,7 @@ const MenuBar = () => {
       {/* <MenuItemContainer item={MENUBAR_ITEMS.QUEUE}><div className='icon-queue'/></MenuItemContainer> */}
       <MenuItemContainer item={MENUBAR_ITEMS.SEARCH}><div className='icon-search'/></MenuItemContainer>
       {/* <MenuItemContainer item={MENUBAR_ITEMS.LIBRARY}><div className='icon-library'/></MenuItemContainer> */}
+      <MenuItemContainer item={MENUBAR_ITEMS.NETWORK}><div className='icon-network'/></MenuItemContainer>
     </div>
   )
 }
